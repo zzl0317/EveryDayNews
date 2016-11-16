@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_pager"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"/>
+    <RadioGroup
+        android:id="@+id/rg_group"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center_vertical">
+        <RadioButton
+            android:id="@+id/rb_one_button"
+            android:drawableTop="@drawable/selector_one"
+            android:button="@null"
+            android:text="第一个"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioButton
+
+            android:drawableTop="@drawable/selector_two"
+            android:gravity="center"
+            android:button="@null"
+            android:text="第二个"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioButton
+
+            android:drawableTop="@drawable/selector_three"
+            android:gravity="center"
+            android:button="@null"
+            android:text="第三个"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RadioGroup>
+</LinearLayout>

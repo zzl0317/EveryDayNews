@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+        <ImageView
+            android:id="@+id/iv_left_pic"
+
+            android:src="@mipmap/biz_navigation_tab_news"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+            <TextView
+                android:textColor="@color/colorWhite"
+                android:id="@+id/tv_left_text"
+                android:textSize="15sp"
+                android:text="新闻"
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+            <TextView
+                android:textColor="@color/colorWhite"
+                android:id="@+id/tv_left_texts"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                android:text="NEWS"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

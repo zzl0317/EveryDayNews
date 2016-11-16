@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+       <LinearLayout
+           android:layout_weight="1"
+           android:layout_width="match_parent"
+           android:layout_height="0dp">
+           <!-- 评论者编号-->
+           <TextView
+               android:gravity="center_vertical"
+               android:id="@+id/iv_news_comment_id"
+               android:text="1"
+               android:layout_width="60dp"
+               android:layout_height="40dp" />
+           <!--头像-->
+           <ImageView
+               android:id="@+id/iv_news_comment_pic"
+               android:src="@mipmap/ic_launcher"
+               android:layout_width="40dp"
+               android:layout_height="40dp" />
+           <!-- 用户名 -->
+           <TextView
+               android:id="@+id/iv_news_comment_user"
+               android:gravity="center_vertical"
+               android:text="哈哈哈"
+               android:layout_width="100dp"
+               android:layout_height="40dp" />
+           <!--  时间-->
+           <TextView
+               android:id="@+id/iv_news_comment_date"
+               android:gravity="center_vertical"
+               android:text="2016-10-25 15：28：30"
+               android:layout_width="190dp"
+               android:layout_height="40dp" />
+
+       </LinearLayout>
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <!--  内容-->
+            <TextView
+                android:id="@+id/iv_news_comment_account"
+                android:text="哈哈哈"
+                android:layout_width="60dp"
+                android:layout_height="20dp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

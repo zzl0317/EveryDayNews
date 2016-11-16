@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+            android:id="@+id/ll_base"
+            android:background="#ff0000"
+            android:padding="5dp"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/iv_news_deatil_left_pic"
+            android:src="@mipmap/back"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+
+        <ImageView
+            android:id="@+id/iv_base_left"
+            android:src="@mipmap/ic_title_home_default"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+        <LinearLayout
+            android:id="@+id/ll_base_home"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/tv_base_tittle"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:text="资讯"
+                android:textSize="20sp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tv_news_deatil_text"
+                android:gravity="bottom|right"
+                android:background="#cabebe"
+                android:textSize="15sp"
+                android:text="跟帖数"
+                android:layout_width="60dp"
+                android:layout_height="20dp" />
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/iv__news_deatil_pic"
+            android:visibility="gone"
+            android:layout_marginLeft="20dp"
+            android:src="@mipmap/news_menu"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+        <ImageView
+            android:id="@+id/iv_base_right"
+            android:src="@mipmap/ic_title_share_default"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/rl_base_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></LinearLayout>
+</LinearLayout>

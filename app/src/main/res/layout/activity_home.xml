@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/dl_home_drawer_layout">
+
+    <LinearLayout
+        android:id="@+id/ll_new_content"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <LinearLayout
+            android:id="@+id/ll_dutum"
+            android:gravity="center"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+            <TextView
+                android:id="@+id/tv_home_war_news"
+                android:text="社会"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_home_society_news"
+                android:layout_marginLeft="10dp"
+                android:text="军事"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/iv_home_pic"
+                android:src="@mipmap/typemore_normal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <!--<ListView-->
+        <!--android:id="@+id/lv_home_news"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"></ListView>-->
+
+    </LinearLayout>
+
+
+
+    <ListView
+        android:id="@+id/lv_home_left"
+        android:layout_width="260dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:background="@mipmap/bg_slidingmenu_left"
+        ></ListView>
+
+
+    <RelativeLayout
+        android:background="@mipmap/bg_slidingmenu_left"
+        android:id="@+id/tv_home_right"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="right" >
+
+        <LinearLayout
+            android:background="@mipmap/bg_slidingmenu_left"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/iv_right_pic"
+                android:layout_marginTop="20dp"
+                android:src="@mipmap/biz_pc_main_info_profile_avatar_bg_dark"
+                android:layout_width="match_parent"
+                android:layout_height="100dp" />
+            <TextView
+                android:id="@+id/tv_right_text"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:text="点击登录"
+                android:textSize="25sp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <TextView
+                    android:textColor="#ffffff"
+                    android:text="更新版本"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@mipmap/share_little_bg"
+                    android:layout_width="260dp"
+                    android:layout_height="40dp">
+                    <ImageView
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:src="@mipmap/fun_share_weixin"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                    <ImageView
+                        android:layout_weight="1"
+                        android:src="@mipmap/addimport_qq"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp" />
+                    <ImageView
+                        android:layout_weight="1"
+                        android:src="@mipmap/fun_share_friends"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                    <ImageView
+                        android:layout_weight="1"
+                        android:src="@mipmap/fun_share_weibo"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    </android.support.v4.widget.DrawerLayout>
+
+<!--主内容区的布局代码要放在侧滑菜单布局的前面,
+这可以帮助DrawerLayout判断谁是侧滑菜单，谁是主内容区:
+侧滑菜单的部分的布局（这里是ListView）可以设置layout_gravity属性，
+他表示侧滑菜单是在左边还是右边。
+-->

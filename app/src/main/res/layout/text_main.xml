@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ll_text_fragment">
+    <TextView
+        android:id="@+id/lv_home"
+        android:textSize="30sp"
+        android:background="@mipmap/biz_pc_main_info_profile_avatar_bg_dark"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

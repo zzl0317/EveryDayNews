@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/et_register_email"
+            android:hint="请输入邮箱"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+    </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/et_register_nick_name"
+                android:hint="请输入用户昵称"
+                android:layout_width="match_parent"
+                android:layout_height="60dp" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/et_register_pass_word"
+                android:hint="请输入密码"
+                android:layout_width="match_parent"
+                android:layout_height="60dp" />
+        </android.support.design.widget.TextInputLayout>
+        <Button
+            android:id="@+id/btn_right_loging"
+            android:background="@mipmap/normalbutton_normal"
+            android:textColor="#ffffff"
+            android:text="立即注册"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+<LinearLayout
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="60dp">
+    <CheckBox
+        android:gravity="center_horizontal"
+        android:layout_width="40dp"
+        android:layout_height="40dp" />
+    <TextView
+        android:text="我同意“服务条款”和“网络用户隐私保护和个人信息利用政策”"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
+
+
+</LinearLayout>
